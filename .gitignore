@@ -2,3 +2,6 @@ sim/*.*
 !sim/.gitkeep
 sim_output/*.*
 !sim_output/.gitkeep
+waveforms/*.*
+!waveforms/.gitkeep
+__pycache__/

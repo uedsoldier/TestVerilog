@@ -8,6 +8,7 @@ Proyecto de ejemplo para pruebas y simulación de módulos Verilog.
 - **testbenches/**: Testbenches para simular los módulos (por ejemplo, [`tb_hello.v`](testbenches/tb_hello.v)).
 - **sim/**: Archivos compilados de simulación (`.vvp`).
 - **sim_output/**: Resultados de simulación, como archivos VCD para visualización de ondas.
+- **waveforms/**: Archivos de configuración y guardado de sesiones de GTKWave (`.sav`), para facilitar la visualización de señales.
 
 ## Uso
 
@@ -27,10 +28,10 @@ vvp sim/tb_hello.vvp
 
 ### 3. Visualizar las señales
 
-Abre el archivo VCD generado con GTKWave:
+Abre el archivo VCD generado con GTKWave. Puedes cargar una configuración guardada desde la carpeta `waveforms/` para facilitar la visualización:
 
 ```sh
-gtkwave sim_output/tb_hello.vcd
+gtkwave sim_output/tb_hello.vcd waveforms/tb_hello.sav
 ```
 
 ## Automatización con VS Code
